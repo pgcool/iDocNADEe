@@ -93,16 +93,11 @@ Reload PPL results:             ./model/MODELNAME/logs/reload_info_ppl.txt
 
 NOTE: In computing PPL or IR for larget text datasets, it is recommented to use the reload functionality for generating scores (PPL/IR) for the test set, and set ``test-ppl-freq`` or ``test-ir-freq`` to a very large number so as to avoid overhead during the training time.
 
-#Citation
+# Citation
 
 @inproceedings{pankajgupta2018iDocNADEe,
-
-  title={Document Informed Neural Autoregressive Topic Models with Distributional Prior},
-  
-  author={Gupta, Pankaj and Chaudhary, Yatin and Buettner, Florian and Sch{\"u}tze, Hinrich},
-  
-  booktitle={AAAI},
-  
-  year={2018}
-  
+title={Document Informed Neural Autoregressive Topic Models with Distributional Prior},
+author={Gupta, Pankaj and Chaudhary, Yatin and Buettner, Florian and Sch{\"u}tze, Hinrich},
+booktitle={AAAI},
+year={2018}
 }
