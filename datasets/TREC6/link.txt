@@ -1,0 +1,5 @@
+http://cogcomp.org/page/resource_view/49
+
+http://cogcomp.org/Data/QA/QC/train_5500.label
+
+http://cogcomp.org/Data/QA/QC/TREC_10.label

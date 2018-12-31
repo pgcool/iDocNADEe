@@ -1,0 +1,6 @@
+num
+loc
+hum
+desc
+enty
+abbr
