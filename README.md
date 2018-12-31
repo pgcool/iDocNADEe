@@ -72,12 +72,18 @@ Pre-trained embeddings dir:     /home/usr/resources/pretrained_embeddings/
 
 ## Contains results of training
 Results directory:              ./model/MODELNAME/
+
 Saved PPL model dir:            ./model/MODELNAME/model_ppl/
+
 Saved IR model dir:             ./model/MODELNAME/model_ir/
 
+
 Saved logs model dir:           ./model/MODELNAME/logs/
+
 Reload IR results:              ./model/MODELNAME/logs/reload_info_ir.txt
+
 Reload PPL results:             ./model/MODELNAME/logs/reload_info_ppl.txt
+
 
 ## Reload Functionality: In case of reload, set the following:
 --reload-model-dir             
@@ -90,8 +96,13 @@ NOTE: In computing PPL or IR for larget text datasets, it is recommented to use 
 #Citation
 
 @inproceedings{pankajgupta2018iDocNADEe,
+
   title={Document Informed Neural Autoregressive Topic Models with Distributional Prior},
+  
   author={Gupta, Pankaj and Chaudhary, Yatin and Buettner, Florian and Sch{\"u}tze, Hinrich},
+  
   booktitle={AAAI},
+  
   year={2018}
+  
 }
