@@ -23,7 +23,9 @@ Requires Python 3 (tested with `3.6.1`). The remaining dependencies can then be 
 
 The script ``train_TMN_docnade_TASKTYPE.sh`` invokes ``train_model.py`` to train the four different model to compute PPL as well IR and save it in a repository. It will also log all the information with the PPL and IR in the same model folder. Here's how to use the script:
 
-        $ ./train_TMN_docnade.sh
+        $ ./train_TMN_docnade_PPL.sh
+		
+		$ ./train_TMN_docnade_IR.sh
 		
         - ``dataset`` 				is the path to the input dataset.
         - ``docnadeVocab`` 			is the path to vocabulary file used by DocNADE.
@@ -85,4 +87,11 @@ Reload PPL results:             ./model/MODELNAME/logs/reload_info_ppl.txt
 
 NOTE: In computing PPL or IR for larget text datasets, it is recommented to use the reload functionality for generating scores (PPL/IR) for the test set, and set ``test-ppl-freq`` or ``test-ir-freq`` to a very large number so as to avoid overhead during the training time.
 
-              
+#Citation
+
+@inproceedings{pankajgupta2018iDocNADEe,
+  title={Document Informed Neural Autoregressive Topic Models with Distributional Prior},
+  author={Gupta, Pankaj and Chaudhary, Yatin and Buettner, Florian and Sch{\"u}tze, Hinrich},
+  booktitle={AAAI},
+  year={2018}
+}
