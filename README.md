@@ -21,7 +21,7 @@ Requires Python 3 (tested with `3.6.1`). The remaining dependencies can then be 
 
 ## How to use: Training of ``DocNADE``, ``DocNADEe``, ``iDocNADE`` and ``iDocNADEe``
 
-The script ``train_TMN_docnade.sh`` invokes ``train_model.py`` to train the four different model to compute PPL as well IR and save it in a repository. It will also log all the information with the PPL and IR in the same model folder. Here's how to use the script:
+The script ``train_TMN_docnade_TASKTYPE.sh`` invokes ``train_model.py`` to train the four different model to compute PPL as well IR and save it in a repository. It will also log all the information with the PPL and IR in the same model folder. Here's how to use the script:
 
         $ ./train_TMN_docnade.sh
 		
@@ -41,7 +41,7 @@ The script ``train_TMN_docnade.sh`` invokes ``train_model.py`` to train the four
         - ``num-classes`` 			is number of classes.
         - ``patience`` 				is patience for early stopping criterion.
         - ``hidden-size`` 			is size of the hidden layer.
-        - ``activation`` 			is which activation to use: sigmoid|tanh. Notice, use 'sigmoid' for PPL and 'tanh' for IR computations. 
+        - ``activation`` 			is which activation to use: sigmoid|tanh. Notice, use 'sigmoid' for **PPL** and 'tanh' for **IR** computations. 
         - ``bidirectional`` 		is whether to use iDocNADE model or not,  i.e. True or False. If True, then model --> ``iDocNADE``
 		- ``initialize-docnade`` 	is whether to include glove embedding prior or not, i.e. True or False. If True, then model -->``DocNADEe``. 
 									If ``bidirectional`` = True and ``initialize-docnade`` = True, then model --> ``iDocNADEe``.
